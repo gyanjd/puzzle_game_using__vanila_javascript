@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Puzzle Game</title>
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/app.js"></script>
+</head>
+
+<body>
+	<h2 align="center">Solve Puzzle</h2>
+    <!-- level -->
+    <p id="levelPanel" align="center">
+
+        <label for="fname">Level : </label>
+
+        <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="label();"
+        /> 
+        <label for="easy">(3 * 3)</label>
+
+        <input type="radio" name="level" id="medium" value="4" onchange="label();" />                        
+        <label for="medium">(4 * 4)</label>
+
+
+        <input type="radio" name="level" id="hard" value="5" onchange="label();" />                        
+        <label for="hard">(5 * 5)</label> <br/>  <br/>
+        <button id="newPhoto" align="center"  class="btn btn-success" type="button" onclick="label();">Restart</button>
+
+    </p>
+
+    <hr />
+	<div id="collage">
+		<div id="playPanel">
+            <div>
+                <!-- show original image -->
+                <div id="actualImageBox">
+                    <img id="actualImage" height=50px width=50px/>
+                </div>
+
+                <!-- playboard -->
+                <ul id="sortable" class="sortable"></ul>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
