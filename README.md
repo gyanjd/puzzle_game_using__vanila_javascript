@@ -1,1 +1,1 @@
-# puzzle_game_using__vanila_javascript
+# Puzzle Game Using Vanila Javascript
